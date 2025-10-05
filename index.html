@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CodeSage AI Reviewer — Data & Privacy</title>
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--accent:#7c5cff;--muted:#9aa4b2;--text:#e6eef8}
+    body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial,sans-serif;background:linear-gradient(180deg,#071028 0%,#081224 100%);color:var(--text);margin:0;padding:32px}
+    .wrap{max-width:900px;margin:0 auto}
+    header{display:flex;align-items:center;gap:16px;margin-bottom:20px}
+    .logo{width:56px;height:56px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#5bb6ff);display:flex;align-items:center;justify-content:center;font-weight:700;color:#04263b}
+    h1{font-size:20px;margin:0}
+    p.lead{color:var(--muted);margin:6px 0 20px}
+    .card{background:var(--card);border-radius:12px;padding:20px;margin-bottom:16px;box-shadow:0 6px 18px rgba(5,9,16,.6)}
+    h2{margin:0 0 8px}
+    ul{margin:8px 0 0 20px;color:var(--muted)}
+    code{background:#071427;padding:2px 6px;border-radius:6px;font-family:monospace;color:#bfe3ff}
+    .muted{color:var(--muted)}
+    .actions{display:flex;gap:8px;margin-top:12px}
+    .btn{background:transparent;border:1px solid rgba(255,255,255,0.06);padding:8px 12px;border-radius:8px;color:var(--text);cursor:pointer}
+    .small{font-size:13px}
+    footer{color:var(--muted);font-size:13px;margin-top:18px;text-align:center}
+    pre.snippet{background:#051226;padding:12px;border-radius:8px;overflow:auto;color:#bfe3ff}
+    .note{background:linear-gradient(90deg,rgba(124,92,255,0.06),rgba(91,182,255,0.04));padding:10px;border-radius:8px;color:var(--muted);font-size:14px}
+    a{color:var(--accent)}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo">CS</div> <!-- Changed logo text to "CS" for CodeSage -->
+      <div>
+        <h1>CodeSage AI Reviewer — Data & Privacy</h1> <!-- Updated title for clarity -->
+        <p class="lead">A short page explaining what user code is sent to Google Gemini and why for CodeSage AI Code Reviewer.</p>
+      </div>
+    </header>
+
+    <section class="card">
+      <h2>What data we send</h2>
+      <p class="muted">We want users to be clear and comfortable about their data.</p>
+      <div class="note">
+        <strong>Data sent to the AI service:</strong>
+        <ul>
+          <li>The user's <em>source code</em> or code snippets submitted for automated review.</li>
+          <li>Optional metadata: programming language, and the user's explicit prompts or instructions.</li>
+        </ul>
+      </div>
+      <p class="small muted">We do not intentionally send any personal identifying information or secrets (like API keys, passwords) from your code. Always review your code before submitting.</p>
+    </section>
+
+    <section class="card">
+      <h2>Why we send it</h2>
+      <p class="muted">Your code is sent to Google Gemini for the following purposes:</p>
+      <ul>
+        <li>To perform automated code review, identifying potential issues and areas for improvement.</li>
+        <li>To generate suggestions for better code structure, efficiency, and clarity.</li>
+        <li>To provide clear explanations of detected issues and proposed solutions.</li>
+      </ul>
+      <p class="small muted">This process helps you quickly improve your code quality and learn best practices.</p>
+    </section>
+
+    <section class="card">
+      <h2>Do we store your code?</h2>
+      <p class="muted">We are explicit and plain about data retention:</p>
+      <div class="note">
+        <strong>We do not store your submitted code on our servers.</strong>
+        <p class="muted">Your code is transmitted directly to the third‑party AI provider (Google Gemini) for processing. It is not persisted by our service beyond the duration necessary to obtain a response from the AI. We do not retain logs of user-submitted code.</p>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Third‑party policy &amp; links</h2>
+      <p class="muted">We rely on Google Gemini (a Google AI product) for code analysis. You should review how Google handles data:</p>
+      <ul>
+        <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a> — general privacy information.</li>
+        <li><a href="https://cloud.google.com/vertex-ai/docs/generative-ai/data-governance" target="_blank" rel="noopener">Google Cloud Generative AI Data Governance</a> — details on how Google handles data used with their generative AI models.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Support &amp; contact</h2>
+      <p class="muted">For any privacy-related questions or support, please contact us:</p>
+      <p>Support email: <a id="supportEmail" href="mailto:ellensengupta@gmail.com">ellensengupta@gmail.com</a></p>
+    </section>
+
+    <footer>
+      <p>This Privacy & Data page is specific to the CodeSage AI Code Reviewer extension. Please ensure this information remains accurate and reflects your current data handling practices.</p>
+    </footer>
+  </div>
+
+  <!-- Removed the copySnippet and openEdit scripts as they are for the template itself, not the privacy policy functionality -->
+</body>
+</html>
