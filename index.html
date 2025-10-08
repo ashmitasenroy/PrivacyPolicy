@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>CodeSage AI Reviewer — Data & Privacy</title>
+  <title>RevuAI — Privacy and Data Protection Policy</title>
   <style>
     :root{--bg:#0f1724;--card:#0b1220;--accent:#7c5cff;--muted:#9aa4b2;--text:#e6eef8}
     body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial,sans-serif;background:linear-gradient(180deg,#071028 0%,#081224 100%);color:var(--text);margin:0;padding:32px}
@@ -21,7 +21,7 @@
     .btn{background:transparent;border:1px solid rgba(255,255,255,0.06);padding:8px 12px;border-radius:8px;color:var(--text);cursor:pointer}
     .small{font-size:13px}
     footer{color:var(--muted);font-size:13px;margin-top:18px;text-align:center}
-    pre.snippet{background:#051226;padding:12px;border-radius:8px;overflow:auto;color:#bfe3ff}
+    pre.snippet{background:#051226;padding:12px;border-radius:8px;overflow:auto;color:#bfe3ff;}
     .note{background:linear-gradient(90deg,rgba(124,92,255,0.06),rgba(91,182,255,0.04));padding:10px;border-radius:8px;color:var(--muted);font-size:14px}
     a{color:var(--accent)}
   </style>
@@ -29,12 +29,17 @@
 <body>
   <div class="wrap">
     <header>
-      <div class="logo">CS</div> <!-- Changed logo text to "CS" for CodeSage -->
+      <div class="logo">RA</div>
       <div>
-        <h1>CodeSage AI Reviewer — Data & Privacy</h1> <!-- Updated title for clarity -->
-        <p class="lead">A short page explaining what user code is sent to Google Gemini and why for CodeSage AI Code Reviewer.</p>
+        <h1>RevuAI — Privacy and Data Protection Policy</h1>
+        <p class="lead">A clear, short explanation of what user code is sent to Google Gemini (the AI provider) and why RevuAI uses it.</p>
       </div>
     </header>
+
+    <section class="card">
+      <h2>Intro</h2>
+      <p class="muted">RevuAI is an independent browser extension that uses Google Gemini to analyze code submitted by users. This page explains what data we send, why we send it, and how we handle it.</p>
+    </section>
 
     <section class="card">
       <h2>What data we send</h2>
@@ -43,10 +48,11 @@
         <strong>Data sent to the AI service:</strong>
         <ul>
           <li>The user's <em>source code</em> or code snippets submitted for automated review.</li>
-          <li>Optional metadata: programming language, and the user's explicit prompts or instructions.</li>
+          <li>Optional metadata: programming language and the user's explicit prompts or instructions.</li>
         </ul>
       </div>
-      <p class="small muted">We do not intentionally send any personal identifying information or secrets (like API keys, passwords) from your code. Always review your code before submitting.</p>
+      <p class="small muted">We do not intentionally send any personal identifying information or secrets (like API keys or passwords) from your code. Always review your code before submitting.</p>
+      <p class="small muted"><strong>RevuAI does not collect, use, or transmit personal information, account data, or browsing activity.</strong></p>
     </section>
 
     <section class="card">
@@ -65,16 +71,16 @@
       <p class="muted">We are explicit and plain about data retention:</p>
       <div class="note">
         <strong>We do not store your submitted code on our servers.</strong>
-        <p class="muted">Your code is transmitted directly to the third‑party AI provider (Google Gemini) for processing. It is not persisted by our service beyond the duration necessary to obtain a response from the AI. We do not retain logs of user-submitted code.</p>
+        <p class="muted">Your code is transmitted to the third-party AI provider (Google Gemini) for processing and is not persisted by RevuAI beyond the duration necessary to obtain a response. We do not retain logs of user-submitted code.</p>
       </div>
     </section>
 
     <section class="card">
-      <h2>Third‑party policy &amp; links</h2>
+      <h2>Third-party policy &amp; links</h2>
       <p class="muted">We rely on Google Gemini (a Google AI product) for code analysis. You should review how Google handles data:</p>
       <ul>
         <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a> — general privacy information.</li>
-        <li><a href="https://cloud.google.com/vertex-ai/docs/generative-ai/data-governance" target="_blank" rel="noopener">Google Cloud Generative AI Data Governance</a> — details on how Google handles data used with their generative AI models.</li>
+        <li><a href="https://cloud.google.com/vertex-ai/docs/generative-ai/data-governance" target="_blank" rel="noopener">Google Cloud Generative AI Data Governance</a> — details on how Google handles data used with generative AI models.</li>
       </ul>
     </section>
 
@@ -85,10 +91,9 @@
     </section>
 
     <footer>
-      <p>This Privacy & Data page is specific to the CodeSage AI Code Reviewer extension. Please ensure this information remains accurate and reflects your current data handling practices.</p>
+      <p>This Privacy &amp; Data page is specific to the RevuAI extension. Please ensure this information remains accurate and reflects current data handling practices.</p>
+      <p class="small muted">Last updated: October 2025</p>
     </footer>
   </div>
-
-  <!-- Removed the copySnippet and openEdit scripts as they are for the template itself, not the privacy policy functionality -->
 </body>
 </html>
